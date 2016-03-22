@@ -197,9 +197,9 @@
         },
         "GetProjects": {
             "httpMethod": "GET",
-             "uri": "workspaces/{id}/projects",
-             "summary": "Get projects",
-             "parameters": {
+            "uri": "workspaces/{id}/projects",
+            "summary": "Get projects",
+            "parameters": {
                 "id": {
                     "location": "uri",
                     "description": "Workspace ID",
@@ -864,11 +864,6 @@
                             "required": true,
                             "description": "duration of time entry (integer, required)"
                         },
-                        "duronly": {
-                            "type": "boolean",
-                            "required": false,
-                            "description": "should Toggl show the start and stop time of this time entry? (boolean, not required)"
-                        },
                         "start": {
                             "type": "string",
                             "required": true,
@@ -962,11 +957,6 @@
                 }
             }
         },
-        "GetCurrentTimeEntry": {
-            "httpMethod": "GET",
-            "uri": "time_entries/current",
-            "summary": "Get Current Time Entry"
-        },
         "UpdateTimeEntry": {
             "httpMethod": "PUT",
             "uri": "time_entries/{id}",
@@ -1022,20 +1012,10 @@
                             },
                             "description": "a list of tag names (array of strings, not required)"
                         },
-                        "duration": {
-                            "type": "integer",
-                            "required": true,
-                            "description": "duration of time entry (integer, required)"
-                        },
                         "duronly": {
                             "type": "boolean",
                             "required": false,
                             "description": "should Toggl show the start and stop time of this time entry? (boolean, not required)"
-                        },
-                        "start": {
-                            "type": "string",
-                            "required": true,
-                            "description": "start of time entry (string, required, ISO 8601 date and time)"
                         }
                     }
                 }
@@ -1217,6 +1197,19 @@
                     "type": "integer",
                     "required": true,
                     "description": "Workspace User ID"
+                }
+            }
+        },
+        "GetDashboard": {
+            "httpMethod": "GET",
+            "uri": "dashboard/{id}",
+            "summary": "Get Workspace Dashboard",
+            "parameters": {
+                "id": {
+                    "location": "uri",
+                    "type": "integer",
+                    "required": true,
+                    "description": "Workspace ID"
                 }
             }
         }
