@@ -3,12 +3,12 @@
     "type": "library",
     "description": "Toggl API client written on top of Guzzle PHP.",
     "keywords": ["toggl", "ajt", "api", "guzzle"],
-    "homepage": "http://github.com/arendjantetteroo/guzzle-toggl",
+    "homepage": "http://github.com/fsicurezza/guzzle-toggl",
     "license": "MIT",
     "authors": [
         {
-            "name": "Arend-Jan Tetteroo",
-            "homepage": "http://www.arendjantetteroo.nl"
+            "name": "Fulvio Sicurezza",
+            "homepage": "http://www.generalservice.na.it"
         }
     ],
     "require": {
